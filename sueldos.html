@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+
+<body>
+<script>
+ let sueldo,ant,resultado;
+ 
+ sueldo=parseInt(prompt('ingrese su sueldo actual', ' '));
+ ant=parseInt(prompt('ingrese su antiguedad en la empresa', ' '));
+ 
+ if(sueldo < 500 && ant >=10)
+ {
+    resultado= sueldo+sueldo*0.2;
+ }
+  if(sueldo < 500 && ant <=10)
+ {
+    resultado= sueldo+sueldo*0.05;
+ }
+  if(sueldo >= 500)
+ {
+    resultado= sueldo;
+ }
+ document.write('El sueldo actualizado es '+ resultado);
+ </script>
+ </body>
+ </html>
